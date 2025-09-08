@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Profile</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    
+    <header id="top">
+        <h1>Welcome to My Portfolio</h1><br>
+    
+        <nav>
+            <a href="#about"><button class="nav-btn">About</button></a>
+            <a href="#skills"><button class="nav-btn">My Skills</button></a>
+            <a href="#education"><button class="nav-btn">Education</button></a>
+            <a href="#projects"><button class="nav-btn">Projects</button></a>
+            <a href="#contact"><button class="nav-btn">Contact</button></a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- About Section -->
+        <section id="about">
+            <h1>GUDA RAJA SHEKAR REDDY</h1>
+            <img src="images/photo.jpg" alt="My Picture" width="300" height="200">
+
+            <p>I am a passionate Web developer with a focus on front-end technologies.</p>
+            <p>I am currently pursuing my B.Tech in <em>Kalasalingam Academy of Research and Education</em>, Tamil Nadu</p>
+            <p>I have learnt Web Development</p>
+            <p>You can <strong>Click here</strong> to check out what I have learnt in HTML, CSS, and JS.</p>
+            <p><strong>Email:</strong> <a href="mailto:srinuraja374@gmail.com">srinuraja374@gmail.com</a></p>
+            <p><strong>Phone:</strong> <a href="tel:+918247016614">8247016614</a></p>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills">
+            <h1>My Skills</h1>
+            <ul class="skills-list">
+                <li>Java Basics</li>
+                <li>HTML Basics</li>
+                <li>CSS Basics</li>
+                <li>JavaScript Basics</li>
+            </ul>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education">
+            <h1>Education</h1>
+            <table border="1" cellpadding="10" cellspacing="0">
+                <tr>
+                    <th>Qualification</th>
+                    <th>Institution</th>
+                    <th>Year</th>
+                    <th>Result</th>
+                </tr>
+                <tr>
+                    <td>Bachelor of Technology in Computer Science and Engineering (AIML)</td>
+                    <td>Kalasalingam Academy of Research and Education, Tamil Nadu</td>
+                    <td>2022 – 2026</td>
+                    <td>CGPA: 8.1/10</td>
+                </tr>
+                <tr>
+                    <td>Intermediate (MPC)</td>
+                    <td>Sri Bhavisya Educational Academy, Vijayawada</td>
+                    <td>2020 – 2022</td>
+                    <td>Percentage: 93.6%</td>
+                </tr>
+                <tr>
+                    <td>10th Standard</td>
+                    <td>Sri Jahnavi High School, Gangavaram</td>
+                    <td>2019 – 2020</td>
+                    <td>Percentage: 98%</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <h1>My Projects</h1>
+            <table border="1" cellpadding="10" cellspacing="0">
+                <tr>
+                    <th>Project Name</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>Portfolio Website</td>
+                    <td>I have built a Portfolio Website using HTML, CSS & JavaScript</td>
+                </tr>
+                <tr>
+                    <td>Bank Management System</td>
+                    <td>A Java Swing application that simulates basic banking operations. It provides a user-friendly interface for managing accounts, transactions, and other essential banking functions.</td>
+                </tr>
+                <tr>
+                    <td>Attendance Management System</td>
+                    <td>I created an Attendance System using Core Java, OOPs, Collections, and Java GUI</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h1>Contact Me</h1>
+            <p>Feel free to get in touch with me using the form below:</p>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name"><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br><br>
+
+                <b>Choose your gender:</b>
+                <label><input type="radio" name="gender" value="male"> Male</label>
+                <label><input type="radio" name="gender" value="female"> Female</label>
+                <br><br>
+
+                <b>Select your interests:</b>
+                <label><input type="checkbox" name="interests" value="coding"> Coding</label>
+                <label><input type="checkbox" name="interests" value="reading"> Reading</label>
+                <br><br>
+
+                <label for="bio">Bio (up to 200 characters):</label>
+                <input type="text" id="bio" name="bio"><br><br>
+
+                <button type="submit" class="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- TOP button -->
+    <a href="#top" class="fixedButton">TOP</a>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 My Portfolio</p><br>
+        <p>
+            <a href="https://github.com/RajaReddy1824" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+            <a href="https://www.linkedin.com/in/raja-shekar-reddy-598171252" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+        </p>
+    </footer>
+</body>
+</html>
