@@ -39,42 +39,62 @@
         <section id="skills">
             <h1>My Skills</h1>
             <ul class="skills-list">
-                <li>Java Basics</li>
-                <li>HTML Basics</li>
+                <li>Java</li>
+                <li>SQL</li>
+                <li>HTML</li>
                 <li>CSS Basics</li>
                 <li>JavaScript Basics</li>
             </ul>
         </section>
 
-        <!-- Education Section -->
         <section id="education">
             <h1>Education</h1>
-            <table border="1" cellpadding="10" cellspacing="0">
-                <tr>
-                    <th>Qualification</th>
-                    <th>Institution</th>
-                    <th>Year</th>
-                    <th>Result</th>
-                </tr>
-                <tr>
-                    <td>Bachelor of Technology in Computer Science and Engineering (AIML)</td>
-                    <td>Kalasalingam Academy of Research and Education, Tamil Nadu</td>
-                    <td>2022 – 2026</td>
-                    <td>CGPA: 8.1/10</td>
-                </tr>
-                <tr>
-                    <td>Intermediate (MPC)</td>
-                    <td>Sri Bhavisya Educational Academy, Vijayawada</td>
-                    <td>2020 – 2022</td>
-                    <td>Percentage: 93.6%</td>
-                </tr>
-                <tr>
-                    <td>10th Standard</td>
-                    <td>Sri Jahnavi High School, Gangavaram</td>
-                    <td>2019 – 2020</td>
-                    <td>Percentage: 98%</td>
-                </tr>
-            </table>
+            <div class="education-cards">
+                <!-- College -->
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="images/kalasalingam_logo.jpg" alt="Kalasalingam Logo" />
+                        </div>
+                        <div class="flip-card-back">
+                            <h3>B.Tech in CSE (AIML)</h3>
+                            <p>Kalasalingam Academy of Research and Education, Tamil Nadu</p>
+                            <p>2022 – 2026</p>
+                            <p>CGPA: 8.1/10</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Intermediate -->
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="images/sri_bhavisya_logo.jpg" alt="Sri Bhavisya Logo" />
+                        </div>
+                        <div class="flip-card-back">
+                            <h3>Intermediate (MPC)</h3>
+                            <p>Sri Bhavisya Educational Academy, Vijayawada</p>
+                            <p>2020 – 2022</p>
+                            <p>Percentage: 93.6%</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 10th Standard -->
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="images/sri_jahnavi_logo.jpg" alt="Sri Jahnavi Logo" />
+                        </div>
+                        <div class="flip-card-back">
+                            <h3>10th Standard</h3>
+                            <p>Sri Jahnavi High School, Gangavaram</p>
+                            <p>2019 – 2020</p>
+                            <p>Percentage: 98%</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <!-- Projects Section -->
@@ -100,32 +120,22 @@
             </table>
         </section>
 
+        <!-- Portfolio Message Section -->
+        <section id="portfolio-message">
+            <h1>RAJA SHEKAR REDDY PORTFOLIO</h1>
+            <p>Thank you for visiting my personal portfolio website. I hope you enjoyed exploring my work and learning more about my skills and projects.</p>
+        </section>
+
         <!-- Contact Section -->
         <section id="contact">
             <h1>Contact Me</h1>
-            <p>Feel free to get in touch with me using the form below:</p>
-            <form>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name"><br><br>
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email"><br><br>
-
-                <b>Choose your gender:</b>
-                <label><input type="radio" name="gender" value="male"> Male</label>
-                <label><input type="radio" name="gender" value="female"> Female</label>
-                <br><br>
-
-                <b>Select your interests:</b>
-                <label><input type="checkbox" name="interests" value="coding"> Coding</label>
-                <label><input type="checkbox" name="interests" value="reading"> Reading</label>
-                <br><br>
-
-                <label for="bio">Bio (up to 200 characters):</label>
-                <input type="text" id="bio" name="bio"><br><br>
-
-                <button type="submit" class="submit">Submit</button>
-            </form>
+            <p>You can reach me through the following channels:</p>
+            <p>
+                <a href="mailto:srinuraja374@gmail.com"><i class="fas fa-envelope fa-2x"></i></a>
+                <a href="https://github.com/RajaReddy1824" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+                <a href="https://www.linkedin.com/in/raja-shekar-reddy-598171252" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+            </p>
         </section>
     </main>
 
@@ -138,6 +148,7 @@
         <p>
             <a href="https://github.com/RajaReddy1824" target="_blank"><i class="fab fa-github fa-2x"></i></a>
             <a href="https://www.linkedin.com/in/raja-shekar-reddy-598171252" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
         </p>
     </footer>
 </body>
