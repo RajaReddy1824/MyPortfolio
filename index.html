@@ -2,154 +2,162 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My Profile</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#081426">
+    <title>RAJASHEKAR REDDY | Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-    <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-    
-    <header id="top">
-        <h1>Welcome to My Portfolio</h1><br>
-    
-        <nav>
-            <a href="#about"><button class="nav-btn">About</button></a>
-            <a href="#skills"><button class="nav-btn">My Skills</button></a>
-            <a href="#education"><button class="nav-btn">Education</button></a>
-            <a href="#projects"><button class="nav-btn">Projects</button></a>
-            <a href="#contact"><button class="nav-btn">Contact</button></a>
-        </nav>
-    </header>
+    <div class="portfolio-shell">
+        <header class="site-header">
+            <button class="brand-button" type="button" data-page="home" aria-label="Go to home">
+                <span class="brand-mark">R</span>
+                <span>Rajashekar Reddy</span>
+            </button>
+            <nav class="site-nav" aria-label="Portfolio pages">
+                <button class="nav-btn is-active" type="button" data-page="home" aria-controls="home" aria-pressed="true">Home</button>
+                <button class="nav-btn" type="button" data-page="about" aria-controls="about" aria-pressed="false">About</button>
+                <button class="nav-btn" type="button" data-page="skills" aria-controls="skills" aria-pressed="false">Skills</button>
+                <button class="nav-btn" type="button" data-page="education" aria-controls="education" aria-pressed="false">Education</button>
+                <button class="nav-btn" type="button" data-page="projects" aria-controls="projects" aria-pressed="false">Projects</button>
+                <button class="nav-btn" type="button" data-page="contact" aria-controls="contact" aria-pressed="false">Contact</button>
+            </nav>
+        </header>
 
-    <main>
-        <!-- About Section -->
-        <section id="about">
-            <h1>GUDA RAJA SHEKAR REDDY</h1>
-            <img src="images/photo.jpg" alt="My Picture" width="300" height="200">
+        <main class="page-stage" id="page-stage" aria-live="polite">
+            <section class="page-panel home-panel is-active" id="home" aria-labelledby="home-title">
+                <div class="home-copy">
+                    <p class="eyebrow"><span class="status-dot"></span> Welcome to my portfolio</p>
+                    <h1 id="home-title"><span class="typing"></span><span class="typing-cursor" aria-hidden="true">|</span></h1>
+                    <p class="home-description">Full-stack developer building useful, thoughtful digital experiences.</p>
+                    <button class="primary-button" type="button" data-page="projects">
+                        Explore my projects <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                    </button>
+                </div>
+                <div class="home-portrait">
+                    <div class="portrait-glow"></div>
+                    <img src="images/photo.jpg" alt="Portrait of Rajashekar Reddy">
+                    <span class="portrait-caption"><i class="fa-solid fa-code" aria-hidden="true"></i> Developer &amp; lifelong learner</span>
+                </div>
+                <div class="home-index" aria-hidden="true">01 <span></span> 06</div>
+            </section>
 
-            <p>I am a passionate Web developer with a focus on front-end technologies.</p>
-            <p>I am currently pursuing my B.Tech in <em>Kalasalingam Academy of Research and Education</em>, Tamil Nadu</p>
-            <p>I have learnt Web Development</p>
-            <p>You can <strong>Click here</strong> to check out what I have learnt in HTML, CSS, and JS.</p>
-            <p><strong>Email:</strong> <a href="mailto:srinuraja374@gmail.com">srinuraja374@gmail.com</a></p>
-            <p><strong>Phone:</strong> <a href="tel:+918247016614">8247016614</a></p>
-        </section>
-
-        <!-- Skills Section -->
-        <section id="skills">
-            <h1>My Skills</h1>
-            <ul class="skills-list">
-                <li>Java</li>
-                <li>SQL</li>
-                <li>HTML</li>
-                <li>CSS Basics</li>
-                <li>JavaScript Basics</li>
-            </ul>
-        </section>
-
-        <section id="education">
-            <h1>Education</h1>
-            <div class="education-cards">
-                <!-- College -->
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <img src="images/kalasalingam_logo.jpg" alt="Kalasalingam Logo" />
-                        </div>
-                        <div class="flip-card-back">
-                            <h3>B.Tech in CSE (AIML)</h3>
-                            <p>Kalasalingam Academy of Research and Education, Tamil Nadu</p>
-                            <p>2022 – 2026</p>
-                            <p>CGPA: 8.1/10</p>
+            <section class="page-panel content-panel" id="about" aria-labelledby="about-title" hidden>
+                <div class="section-heading">
+                    <p class="eyebrow">A little about me</p>
+                    <h1 id="about-title">About <span>Me</span></h1>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon"><i class="fa-solid fa-user-astronaut" aria-hidden="true"></i></div>
+                    <div>
+                        <h2>GUDA RAJASHEKAR REDDY</h2>
+                        <p>I am a passionate full-stack developer with a focus on front-end and backend technologies.</p>
+                        <p>I completed my B.Tech at <em>Kalasalingam Academy of Research and Education</em>, Tamil Nadu.</p>
+                        <p>I have learned web development and backend development.</p>
+                        <div class="contact-details">
+                            <a href="mailto:srinuraja374@gmail.com"><i class="fa-solid fa-envelope" aria-hidden="true"></i> srinuraja374@gmail.com</a>
+                            <a href="tel:+918247016614"><i class="fa-solid fa-phone" aria-hidden="true"></i> 8247016614</a>
                         </div>
                     </div>
                 </div>
+            </section>
 
-                <!-- Intermediate -->
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <img src="images/sri_bhavisya_logo.jpg" alt="Sri Bhavisya Logo" />
-                        </div>
-                        <div class="flip-card-back">
-                            <h3>Intermediate (MPC)</h3>
-                            <p>Sri Bhavisya Educational Academy, Vijayawada</p>
-                            <p>2020 – 2022</p>
-                            <p>Percentage: 93.6%</p>
-                        </div>
-                    </div>
+            <section class="page-panel content-panel" id="skills" aria-labelledby="skills-title" hidden>
+                <div class="section-heading">
+                    <p class="eyebrow">Tools I work with</p>
+                    <h1 id="skills-title">My <span>Skills</span></h1>
+                    <p class="section-intro">A few of the technologies I have learned and use in my work.</p>
                 </div>
-
-                <!-- 10th Standard -->
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <img src="images/sri_jahnavi_logo.jpg" alt="Sri Jahnavi Logo" />
-                        </div>
-                        <div class="flip-card-back">
-                            <h3>10th Standard</h3>
-                            <p>Sri Jahnavi High School, Gangavaram</p>
-                            <p>2019 – 2020</p>
-                            <p>Percentage: 98%</p>
-                        </div>
-                    </div>
+                <div class="skills-grid">
+                    <article class="skill-card"><i class="fa-brands fa-java" aria-hidden="true"></i><h2>Java</h2></article>
+                    <article class="skill-card"><i class="fa-solid fa-database" aria-hidden="true"></i><h2>SQL</h2></article>
+                    <article class="skill-card"><i class="fa-solid fa-plug" aria-hidden="true"></i><h2>JDBC</h2><p>Basics</p></article>
+                    <article class="skill-card"><i class="fa-brands fa-html5" aria-hidden="true"></i><h2>HTML</h2></article>
+                    <article class="skill-card"><i class="fa-brands fa-css3-alt" aria-hidden="true"></i><h2>CSS</h2></article>
+                    <article class="skill-card"><i class="fa-brands fa-js" aria-hidden="true"></i><h2>JavaScript</h2></article>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <!-- Projects Section -->
-        <section id="projects">
-            <h1>My Projects</h1>
-            <table border="1" cellpadding="10" cellspacing="0">
-                <tr>
-                    <th>Project Name</th>
-                    <th>Description</th>
-                </tr>
-                <tr>
-                    <td>Portfolio Website</td>
-                    <td>I have built a Portfolio Website using HTML, CSS & JavaScript</td>
-                </tr>
-                <tr>
-                    <td>Bank Management System</td>
-                    <td>A Java Swing application that simulates basic banking operations. It provides a user-friendly interface for managing accounts, transactions, and other essential banking functions.</td>
-                </tr>
-                <tr>
-                    <td>Attendance Management System</td>
-                    <td>I created an Attendance System using Core Java, OOPs, Collections, and Java GUI</td>
-                </tr>
-            </table>
-        </section>
+            <section class="page-panel content-panel" id="education" aria-labelledby="education-title" hidden>
+                <div class="section-heading">
+                    <p class="eyebrow">My learning journey</p>
+                    <h1 id="education-title">Education</h1>
+                    <p class="section-intro">Hover over or focus a card to see more details.</p>
+                </div>
+                <div class="education-cards">
+                    <article class="flip-card" tabindex="0" aria-label="Kalasalingam Academy of Research and Education, B.Tech in CSE AIML, 2022 to 2026, CGPA 8.26 out of 10">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front"><img src="images/kalasalingam_logo.jpg" alt="Kalasalingam Academy logo"><span>B.Tech · 2022–2026</span></div>
+                            <div class="flip-card-back"><h2>B.Tech in CSE (AIML)</h2><p>Kalasalingam Academy of Research and Education, Tamil Nadu</p><p>2022 – 2026</p><strong>CGPA: 8.26/10</strong></div>
+                        </div>
+                    </article>
+                    <article class="flip-card" tabindex="0" aria-label="Sri Bhavisya Educational Academy, Intermediate MPC, 2020 to 2022, 93.6 percent">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front"><img src="images/sri_bhavisya_logo.jpg" alt="Sri Bhavisya Educational Academy logo"><span>Intermediate · 2020–2022</span></div>
+                            <div class="flip-card-back"><h2>Intermediate (MPC)</h2><p>Sri Bhavisya Educational Academy, Vijayawada</p><p>2020 – 2022</p><strong>Percentage: 93.6%</strong></div>
+                        </div>
+                    </article>
+                    <article class="flip-card" tabindex="0" aria-label="Sri Jahnavi High School, 10th Standard, 2019 to 2020, 98 percent">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front"><img src="images/sri_jahnavi_logo.jpg" alt="Sri Jahnavi High School logo"><span>10th Standard · 2019–2020</span></div>
+                            <div class="flip-card-back"><h2>10th Standard</h2><p>Sri Jahnavi High School, Gangavaram</p><p>2019 – 2020</p><strong>Percentage: 98%</strong></div>
+                        </div>
+                    </article>
+                </div>
+            </section>
 
-        <!-- Portfolio Message Section -->
-        <section id="portfolio-message">
-            <h1>RAJA SHEKAR REDDY PORTFOLIO</h1>
-            <p>Thank you for visiting my personal portfolio website. I hope you enjoyed exploring my work and learning more about my skills and projects.</p>
-        </section>
+            <section class="page-panel content-panel" id="projects" aria-labelledby="projects-title" hidden>
+                <div class="section-heading">
+                    <p class="eyebrow">Things I have built</p>
+                    <h1 id="projects-title">My <span>Projects</span></h1>
+                    <p class="section-intro">Hover over, focus, or tap a project card to flip it and read more.</p>
+                </div>
+                <div class="projects-grid">
+                    <article class="project-card" tabindex="0" aria-label="Portfolio Website. Built using HTML, CSS, and JavaScript.">
+                        <div class="project-card-inner">
+                            <div class="project-card-front"><span class="project-number">01</span><i class="fa-solid fa-laptop-code" aria-hidden="true"></i><h2>Portfolio Website</h2><span class="project-hint">Flip to explore <i class="fa-solid fa-rotate" aria-hidden="true"></i></span></div>
+                            <div class="project-card-back"><span class="project-number">01 / ABOUT</span><h2>Portfolio Website</h2><p>A personal portfolio built to share my skills, education, and work.</p><div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div></div>
+                        </div>
+                    </article>
+                    <article class="project-card" tabindex="0" aria-label="Java Learning Chatbot. An interactive Java Swing chatbot for Java and SQL learning.">
+                        <div class="project-card-inner">
+                            <div class="project-card-front"><span class="project-number">02</span><i class="fa-solid fa-comments" aria-hidden="true"></i><h2>Java Learning Chatbot</h2><span class="project-hint">Flip to explore <i class="fa-solid fa-rotate" aria-hidden="true"></i></span></div>
+                            <div class="project-card-back"><span class="project-number">02 / ABOUT</span><h2>Java Learning Chatbot</h2><p>An interactive Java Swing chatbot with keyword-based responses, code examples, and learning topics for Java and SQL.</p><div class="project-tags"><span>Core Java</span><span>Swing</span><span>OOP</span></div></div>
+                        </div>
+                    </article>
+                    <article class="project-card" tabindex="0" aria-label="FastPay, a Java Swing digital payment application.">
+                        <div class="project-card-inner">
+                            <div class="project-card-front"><span class="project-number">03</span><i class="fa-solid fa-wallet" aria-hidden="true"></i><h2>FASTPAY</h2><span class="project-hint">Flip to explore <i class="fa-solid fa-rotate" aria-hidden="true"></i></span></div>
+                            <div class="project-card-back"><span class="project-number">03 / ABOUT</span><h2>FASTPAY</h2><p>A desktop digital payment application with a Java Swing interface and basic payment functionality.</p><div class="project-tags"><span>Java</span><span>Swing</span><span>Serialization</span></div></div>
+                        </div>
+                    </article>
+                    <article class="project-card" tabindex="0" aria-label="AI based Currency Detection using Python, YOLOv8, Gemini Vision, and computer vision.">
+                        <div class="project-card-inner">
+                            <div class="project-card-front"><span class="project-number">04</span><i class="fa-solid fa-money-bill-transfer" aria-hidden="true"></i><h2>AI Currency Detection</h2><span class="project-hint">Flip to explore <i class="fa-solid fa-rotate" aria-hidden="true"></i></span></div>
+                            <div class="project-card-back"><span class="project-number">04 / ABOUT</span><h2>AI Currency Detection</h2><p>An AI-powered currency detection project combining computer vision and vision-language capabilities.</p><div class="project-tags"><span>Python</span><span>YOLOv8</span><span>Gemini Vision</span></div></div>
+                        </div>
+                    </article>
+                </div>
+            </section>
 
-        <!-- Contact Section -->
-        <section id="contact">
-            <h1>Contact Me</h1>
-            <p>You can reach me through the following channels:</p>
-            <p>
-                <a href="mailto:srinuraja374@gmail.com"><i class="fas fa-envelope fa-2x"></i></a>
-                <a href="https://github.com/RajaReddy1824" target="_blank"><i class="fab fa-github fa-2x"></i></a>
-                <a href="https://www.linkedin.com/in/raja-shekar-reddy-598171252" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
-                <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
-            </p>
-        </section>
-    </main>
+            <section class="page-panel content-panel" id="contact" aria-labelledby="contact-title" hidden>
+                <div class="section-heading">
+                    <p class="eyebrow">Let's connect</p>
+                    <h1 id="contact-title">Contact <span>Me</span></h1>
+                    <p class="section-intro">You can reach me through any of the following channels.</p>
+                </div>
+                <div class="contact-card">
+                    <a href="mailto:srinuraja374@gmail.com"><i class="fa-solid fa-envelope" aria-hidden="true"></i><span>Email</span><small>srinuraja374@gmail.com</small></a>
+                    <a href="https://github.com/RajaReddy1824" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github" aria-hidden="true"></i><span>GitHub</span><small>View my repositories</small></a>
+                    <a href="https://www.linkedin.com/in/guda-rajashekar-reddy" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin" aria-hidden="true"></i><span>LinkedIn</span><small>Connect with me</small></a>
+                    <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram" aria-hidden="true"></i><span>Instagram</span><small>Follow along</small></a>
+                </div>
+            </section>
+        </main>
 
-    <!-- TOP button -->
-    <a href="#top" class="fixedButton">TOP</a>
-
-    <!-- Footer -->
-    <footer>
-        <p>© 2025 My Portfolio</p><br>
-        <p>
-            <a href="https://github.com/RajaReddy1824" target="_blank"><i class="fab fa-github fa-2x"></i></a>
-            <a href="https://www.linkedin.com/in/raja-shekar-reddy-598171252" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
-            <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
-        </p>
-    </footer>
+        <footer class="site-footer"><span>© 2025 Rajashekar Reddy</span><span>Designed with curiosity <i class="fa-solid fa-heart" aria-hidden="true"></i></span></footer>
+    </div>
+    <script src="script.js" defer></script>
 </body>
 </html>
